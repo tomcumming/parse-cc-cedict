@@ -7,7 +7,7 @@ export type Definition = {
     definitions: string[];
 };
 
-export const lineRegex = /(\S+)\s+(\S+)\s+\[([^\]]*)\]\s+\/(.*)\/$/;
+export const lineRegex = /(\S+)\s+(\S+)\s+\[([^\]]*)\]\s+\/(.*)\/\s*$/;
 
 export function parse(contents: string, ignoreErrors = false): Definition[] {
     const definitions: Definition[] = [];
