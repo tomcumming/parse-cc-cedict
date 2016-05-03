@@ -1,0 +1,35 @@
+{
+  "name": "parse-cc-cedict",
+  "version": "1.0.0",
+  "description": "Parses the dictionary file from the CC-CEDICT project",
+  "main": "lib/parse-cc-cedict.js",
+  "directories": {
+    "test": "test"
+  },
+  "files": [
+    "test",
+    "lib",
+    "LICENSE.txt",
+    "README"
+  ],
+  "typings": "lib/parse-cc-cedict.d.ts",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "keywords": [
+    "CJK"
+  ],
+  "author": "Tom Cumming <mail@tomcumming.co.uk>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "dependencies": {},
+  "bugs": {
+    "url": "https://github.com/tomcumming/parse-cc-cedict"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomcumming/parse-cc-cedict.git"
+  }
+}
