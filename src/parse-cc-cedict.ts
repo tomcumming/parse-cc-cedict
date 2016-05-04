@@ -9,7 +9,7 @@ export type Definition = {
 
 export const lineRegex = /(\S+)\s+(\S+)\s+\[([^\]]*)\]\s+\/(.*)\/\s*$/;
 
-export function parse(contents: string, ignoreErrors = false): Definition[] {
+export function parse(contents: string): Definition[] {
     const definitions: Definition[] = [];
     const lines = contents.split('\n');
     lines.forEach((line, i) => {
@@ -23,12 +23,12 @@ export function parse(contents: string, ignoreErrors = false): Definition[] {
                 definitions: match[4].split('/')
             });
         else
-            throw new Error('Invalid line format (' + (i + 1) + '):' + line);
+            process.stderr.write(`Invalid line format ${i + 1}: ${line}\n`);
     });
     return definitions;
 }
 
-export function parseFile(filename: string, ignoreErrors = false): Definition[] {
+export function parseFile(filename: string): Definition[] {
     const contents = readFileSync(filename, 'utf-8');
-    return parse(contents, ignoreErrors);
+    return parse(contents);
 }
