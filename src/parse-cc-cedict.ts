@@ -17,8 +17,8 @@ export function parse(contents: string): Definition[] {
         const match = lineRegex.exec(line);
         if(match !== null)
             definitions.push({
-                simplified: match[1],
-                traditional: match[2],
+                traditional: match[1],
+                simplified: match[2],
                 pronunciation: match[3],
                 definitions: match[4].split('/')
             });
