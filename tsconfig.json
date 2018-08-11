@@ -1,14 +1,12 @@
 {
     "compilerOptions": {
-        "noImplicitAny": true,
-        "noImplicitReturns": true,
+        "strict": true,
         "target": "es2015",
         "module": "commonjs",
         "outDir": "lib",
         "declaration": true
     },
     "files": [
-        "typings/main.d.ts",
         "src/parse-cc-cedict.ts"
     ]
 }

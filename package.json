@@ -14,7 +14,8 @@
   ],
   "typings": "lib/parse-cc-cedict.d.ts",
   "scripts": {
-    "test": "node test/test.js"
+    "test": "node test/test.js",
+    "build": "tsc"
   },
   "keywords": [
     "CJK"
@@ -31,5 +32,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/tomcumming/parse-cc-cedict.git"
+  },
+  "devDependencies": {
+    "@types/node": "^10.5.8",
+    "typescript": "^3.0.1"
   }
 }
