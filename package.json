@@ -1,6 +1,6 @@
 {
   "name": "parse-cc-cedict",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Parses the dictionary file from the CC-CEDICT project",
   "main": "lib/parse-cc-cedict.js",
   "directories": {
